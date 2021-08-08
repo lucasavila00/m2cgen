@@ -16,7 +16,7 @@ from m2cgen.exporters import (
     export_to_r,
     export_to_ruby,
     export_to_rust,
-    export_to_visual_basic,
+    export_to_visual_basic
 )
 
 __all__ = [
