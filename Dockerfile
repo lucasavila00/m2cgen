@@ -58,6 +58,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
         r-base \
         ruby-full \
         zulu-8 \
+        erlang-solutions \
         esl-erlang \
         elixir && \
     rm -rf /var/lib/apt/lists/*
