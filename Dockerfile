@@ -31,8 +31,9 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
     update-locale && \
     add-apt-repository ppa:deadsnakes/ppa -y && \
     wget -q https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb -O packages-microsoft-prod.deb && \
-    wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb && dpkg -i erlang-solutions_2.0_all.deb && \
+    wget -q https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb -O erlang-solutions_2.0_all.deb && \
     dpkg -i packages-microsoft-prod.deb && \
+    dpkg -i erlang-solutions_2.0_all.deb && \
     wget -qO- https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && \
     wget -qO- https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list && \
     apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0xB1998361219BD9C9 && \
