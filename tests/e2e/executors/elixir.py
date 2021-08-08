@@ -55,10 +55,6 @@ class ElixirExecutor(BaseExecutor):
         self.exec_path = self._resource_tmp_dir
         script_path = self._resource_tmp_dir / f"{self.model_name}.ex"
 
-        f = open("/home/lucas/fluff/m2cgen/tmp/abc.ex", "w")
-        f.write(executor_code)
-        f.close()
-
         utils.write_content_to_file(executor_code, script_path)
 
         subprocess.call([
