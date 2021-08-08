@@ -26,6 +26,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
         gpg-agent \
         locales \
         software-properties-common \
+        gnupg2 \
         wget && \
     locale-gen $LC_ALL && \
     update-locale && \

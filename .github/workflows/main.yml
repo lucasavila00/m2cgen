@@ -21,12 +21,12 @@ jobs:
           - 3.8
           - 3.9
         lang:
-          - "API"
-          - "c_lang or python or java or go_lang or javascript or php or haskell or ruby or rust"
-          - "c_sharp or visual_basic or f_sharp"
-          - "r_lang"
+          # - "API"
+          # - "c_lang or python or java or go_lang or javascript or php or haskell or ruby or rust"
+          # - "c_sharp or visual_basic or f_sharp"
+          # - "r_lang"
           - "elixir"
-          - "dart or powershell"
+          # - "dart or powershell"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
