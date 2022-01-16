@@ -28,6 +28,6 @@ defmodule Model do
                 end
             end
         end
-        [func0.()]
+        func0.()
     end
 end

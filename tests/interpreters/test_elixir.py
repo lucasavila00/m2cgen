@@ -29,7 +29,7 @@ defmodule Model do
                 3.0
             end
         end
-        [func0.()]
+        func0.()
     end
 end
 """
@@ -57,7 +57,7 @@ defmodule Model do
     end
     def score(input) do
         input = list_to_binary(input)
-        [((read(input,0)) / (-2.0)) * (2.0)]
+        ((read(input,0)) / (-2.0)) * (2.0)
     end
 end
 """
@@ -106,7 +106,7 @@ defmodule Model do
                 read(input,0)
             end
         end
-        [func1.()]
+        func1.()
     end
 end
 """
@@ -159,7 +159,7 @@ defmodule Model do
                 2.0
             end
         end
-        [func1.()]
+        func1.()
     end
 end
 """
@@ -321,7 +321,7 @@ defmodule Model do
         func0 = fn ->
             (1.0) + ((1.0) + (1.0))
         end
-        [(1.0) + ((1.0) + (func0.()))]
+        (1.0) + ((1.0) + (func0.()))
     end
 end
 """
@@ -370,7 +370,7 @@ defmodule Model do
                 end
             end
         end
-        [func0.()]
+        func0.()
     end
 end
 """
@@ -422,7 +422,7 @@ defmodule Model do
                 end
             end
         end
-        [func0.()]
+        func0.()
     end
 end
 """
@@ -486,7 +486,7 @@ defmodule Model do
                 end
             end
         end
-        [func4.()]
+        func4.()
     end
 end
 """
@@ -510,7 +510,7 @@ defmodule Model do
     end
     def score(input) do
         input = list_to_binary(input)
-        [abs(-1.0)]
+        abs(-1.0)
     end
 end
 """
@@ -534,7 +534,7 @@ defmodule Model do
     end
     def score(input) do
         input = list_to_binary(input)
-        [:math.exp(1.0)]
+        :math.exp(1.0)
     end
 end
 """
@@ -558,7 +558,7 @@ defmodule Model do
     end
     def score(input) do
         input = list_to_binary(input)
-        [:math.pow(2.0, 3.0)]
+        :math.pow(2.0, 3.0)
     end
 end
 """
@@ -582,7 +582,7 @@ defmodule Model do
     end
     def score(input) do
         input = list_to_binary(input)
-        [:math.sqrt(2.0)]
+        :math.sqrt(2.0)
     end
 end
 """
@@ -606,7 +606,7 @@ defmodule Model do
     end
     def score(input) do
         input = list_to_binary(input)
-        [:math.tanh(2.0)]
+        :math.tanh(2.0)
     end
 end
 """
@@ -630,7 +630,7 @@ defmodule Model do
     end
     def score(input) do
         input = list_to_binary(input)
-        [:math.log(2.0)]
+        :math.log(2.0)
     end
 end
 """
@@ -654,7 +654,7 @@ defmodule Model do
     end
     def score(input) do
         input = list_to_binary(input)
-        [log1p(2.0)]
+        log1p(2.0)
     end
 defp log1p(x) do
     cond do
@@ -725,7 +725,7 @@ defmodule Model do
     end
     def score(input) do
         input = list_to_binary(input)
-        [:math.atan(2.0)]
+        :math.atan(2.0)
     end
 end
 """
@@ -779,7 +779,7 @@ defmodule Model do
     end
     def score(input) do
         input = list_to_binary(input)
-        [sigmoid(2.0)]
+        sigmoid(2.0)
     end
 defp sigmoid(x) do
     1.0 / (1.0 + :math.exp(-x))
@@ -810,7 +810,7 @@ defmodule Model do
         func0 = fn ->
             :math.exp(1.0)
         end
-        [(func0.()) / (func0.())]
+        (func0.()) / (func0.())
     end
 end
 """

@@ -39,6 +39,6 @@ defmodule Model do
                 end
             end
         end
-        [(0.5) + ((func0.()) + (func1.()))]
+        (0.5) + ((func0.()) + (func1.()))
     end
 end
